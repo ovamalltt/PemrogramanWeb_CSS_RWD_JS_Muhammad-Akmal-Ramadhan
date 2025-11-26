@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencemaran Lingkungan</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Website Informasi Pencemaran Lingkungan</h1>
+        <p class="subtitle">Muhammad Akmal Ramadhan - NIM 202431034</p>
+    </header>
+
+<div id="content">
+<p>Pencemaran lingkungan adalah masalah besar yang mempengaruhi kualitas hidup di planet ini...</p>
+<!-- Pencemaran Air -->
+<h2 class="pollution-title" onclick="toggleExplanation(1)">1. Pencemaran Air</h2>
+<p id="explanation-1" class="pollution-description">
+    Pencemaran air terjadi ketika bahan kimia atau kontaminan lainnya masuk ke dalam sumber air, merusak kualitasnya.
+    Di Indonesia, banyak sungai dan danau yang tercemar, mengancam ekosistem dan kesehatan manusia.
+    <br>
+    <button class="button" onclick="showTable('table-air')">Tampilkan Data Pencemaran</button>
+    <button class="button" onclick="hideTable('table-air')">Tutup Data Pencemaran</button>
+
+    <div id="table-air" style="display: none; background-color: #e8f5e9; border-radius: 10px; padding: 15px; margin-top: 20px;">
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 10px;">
+            <tr>
+                <th>Sungai/Danau</th>
+                <th>Jenis Pencemaran</th>
+                <th>Daerah Terkontaminasi</th>
+                <th>Data Kualitas Air</th>
+            </tr>
+            <tr>
+                <td>Sungai Citarum</td>
+                <td>Kimia dan Limbah Rumah Tangga</td>
+                <td>Jawa Barat</td>
+                <td>pH: 6.5, COD: 250 mg/L</td>
+            </tr>
+            <tr>
+                <td>Sungai Brantas</td>
+                <td>Logam Berat</td>
+                <td>Jawa Timur</td>
+                <td>pH: 7.0, BOD: 50 mg/L</td>
+            </tr>
+            <tr>
+                <td>Danau Toba</td>
+                <td>Eutrofikasi (Kelebihan Nutrisi)</td>
+                <td>Sumatera Utara</td>
+                <td>pH: 7.5, Nitrat: 20 mg/L</td>
+            </tr>
+        </table>
+    </div>
+</p>
+
+<!-- Pencemaran Udara -->
+<h2 class="pollution-title" onclick="toggleExplanation(2)">2. Pencemaran Udara</h2>
+<p id="explanation-2" class="pollution-description">
+    Pencemaran udara disebabkan oleh emisi gas berbahaya dari kendaraan bermotor dan industri. 
+    Hal ini menyebabkan kualitas udara menurun dan dapat memengaruhi kesehatan manusia dan hewan.
+    <br>
+    <button class="button" onclick="showTable('table-air-pollution')">Tampilkan Data Pencemaran</button>
+    <button class="button" onclick="hideTable('table-air-pollution')">Tutup Data Pencemaran</button>
+
+    <div id="table-air-pollution" style="display: none; background-color: #e8f5e9; border-radius: 10px; padding: 15px; margin-top: 20px;">
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 10px;">
+            <tr>
+                <th>Kota</th>
+                <th>Jenis Pencemaran</th>
+                <th>Sumber Pencemaran</th>
+                <th>Data Kualitas Udara</th>
+            </tr>
+            <tr>
+                <td>Jakarta</td>
+                <td>Partikulat (PM2.5)</td>
+                <td>Kendaraan Bermotor</td>
+                <td>PM2.5: 150 µg/m³</td>
+            </tr>
+            <tr>
+                <td>Surabaya</td>
+                <td>Karbon Dioksida (CO2)</td>
+                <td>Industri</td>
+                <td>CO2: 350 µg/m³</td>
+            </tr>
+            <tr>
+                <td>Medan</td>
+                <td>Ozon (O3)</td>
+                <td>Transportasi</td>
+                <td>O3: 200 µg/m³</td>
+            </tr>
+        </table>
+    </div>
+</p>
+
+<!-- Pencemaran Tanah -->
+<h2 class="pollution-title" onclick="toggleExplanation(3)">3. Pencemaran Tanah</h2>
+<p id="explanation-3" class="pollution-description">
+    Pencemaran tanah terjadi akibat pembuangan limbah padat dan bahan kimia berbahaya ke tanah.
+    Ini dapat menyebabkan kerusakan pada tanaman, hewan, dan mempengaruhi kualitas tanah untuk pertanian.
+    <br>
+    <button class="button" onclick="showTable('table-soil-pollution')">Tampilkan Data Pencemaran</button>
+    <button class="button" onclick="hideTable('table-soil-pollution')">Tutup Data Pencemaran</button>
+
+    <div id="table-soil-pollution" style="display: none; background-color: #e8f5e9; border-radius: 10px; padding: 15px; margin-top: 20px;">
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 10px;">
+            <tr>
+                <th>Lokasi</th>
+                <th>Jenis Pencemaran</th>
+                <th>Daerah Terkontaminasi</th>
+                <th>Data Kualitas Tanah</th>
+            </tr>
+            <tr>
+                <td>Jakarta</td>
+                <td>Logam Berat (Pb)</td>
+                <td>Bekasi</td>
+                <td>Pb: 10.5 ppm</td>
+            </tr>
+            <tr>
+                <td>Surabaya</td>
+                <td>Petrolium</td>
+                <td>Sidoarjo</td>
+                <td>Petrolium: 15.3 mg/kg</td>
+            </tr>
+            <tr>
+                <td>Yogyakarta</td>
+                <td>Pestisida</td>
+                <td>Klaten</td>
+                <td>Pestisida: 12.2 mg/kg</td>
+            </tr>
+        </table>
+    </div>
+</p>
+
+<!-- Pencemaran Suara -->
+<h2 class="pollution-title" onclick="toggleExplanation(4)">4. Pencemaran Suara</h2>
+<p id="explanation-4" class="pollution-description">
+    Pencemaran suara berasal dari kebisingan yang ditimbulkan oleh kendaraan, alat berat, dan aktivitas industri,
+    yang dapat memengaruhi kualitas hidup dan kesehatan manusia.
+    <br>
+    <button class="button" onclick="showTable('table-noise-pollution')">Tampilkan Data Pencemaran</button>
+    <button class="button" onclick="hideTable('table-noise-pollution')">Tutup Data Pencemaran</button>
+
+    <div id="table-noise-pollution" style="display: none; background-color: #e8f5e9; border-radius: 10px; padding: 15px; margin-top: 20px;">
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 10px;">
+            <tr>
+                <th>Kota</th>
+                <th>Jenis Pencemaran</th>
+                <th>Sumber Pencemaran</th>
+                <th>Data Tingkat Kebisingan</th>
+            </tr>
+            <tr>
+                <td>Jakarta</td>
+                <td>Kebisingan Transportasi</td>
+                <td>Kendaraan Bermotor</td>
+                <td>85 dB</td>
+            </tr>
+            <tr>
+                <td>Bandung</td>
+                <td>Suara Industri</td>
+                <td>Pabrik</td>
+                <td>90 dB</td>
+            </tr>
+            <tr>
+                <td>Medan</td>
+                <td>Suara Kendaraan</td>
+                <td>Transportasi</td>
+                <td>80 dB</td>
+            </tr>
+        </table>
+    </div>
+</p>
+
+<!-- Pencemaran Cahaya -->
+<h2 class="pollution-title" onclick="toggleExplanation(5)">5. Pencemaran Cahaya</h2>
+<p id="explanation-5" class="pollution-description">
+    Pencemaran cahaya terjadi akibat cahaya buatan yang mengganggu ekosistem dan kesehatan manusia. Ini sering terjadi
+    di daerah perkotaan dengan pencahayaan yang berlebihan.
+    <br>
+    <button class="button" onclick="showTable('table-light-pollution')">Tampilkan Data Pencemaran</button>
+    <button class="button" onclick="hideTable('table-light-pollution')">Tutup Data Pencemaran</button>
+
+    <div id="table-light-pollution" style="display: none; background-color: #e8f5e9; border-radius: 10px; padding: 15px; margin-top: 20px;">
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 10px;">
+            <tr>
+                <th>Kota</th>
+                <th>Jenis Pencemaran</th>
+                <th>Sumber Pencemaran</th>
+                <th>Data Kualitas Cahaya</th>
+            </tr>
+            <tr>
+                <td>Jakarta</td>
+                <td>Cahaya Jalan</td>
+                <td>Pencahayaan Jalan Raya</td>
+                <td>Brightness: 500 Lux</td>
+            </tr>
+            <tr>
+                <td>Surabaya</td>
+                <td>Cahaya Gedung</td>
+                <td>Pencahayaan Gedung</td>
+                <td>Brightness: 400 Lux</td>
+            </tr>
+            <tr>
+                <td>Bandung</td>
+                <td>Cahaya Rumah</td>
+                <td>Pencahayaan Rumah Tangga</td>
+                <td>Brightness: 300 Lux</td>
+            </tr>
+        </table>
+    </div>
+</p>
+</div>
+
+<br>
+<br>
+<!-- Button Container for Left and Right Alignment -->
+<div class="button-container">
+    <button class="button" onclick="toggleMode()">Ubah Mode Tampilan</button>
+    <button class="button" onclick="window.location.href='images.html'">Tampilkan Gambar</button>
+</div>
+
+<!-- Link ke file JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

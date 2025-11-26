@@ -1,0 +1,174 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8f4; /* Light background color */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #81c784, #388e3c); /* Gradient Green Background */
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding shadow */
+}
+
+.title {
+    font-size: 36px;
+    color: #fff; /* White text for title */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #f1f8e9; /* Light color for subtitle */
+}
+
+/* Pollution Titles Styling */
+.pollution-title {
+    font-size: 24px;
+    color: #388e3c;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+}
+
+.pollution-title:hover {
+    color: #81c784; /* Lighter green on hover */
+}
+
+/* Pollution Description */
+.pollution-description {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    padding-left: 20px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #388e3c;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    transition: opacity 0.3s ease;
+}
+
+/* Buttons Styling */
+.button-container {
+    display: flex;
+    justify-content: space-between;  /* Menempatkan tombol di kiri dan kanan */
+    width: 100%;  /* Memastikan tombol mengisi lebar penuh */
+    max-width: 800px;  /* Membatasi lebar tombol untuk lebih rapi */
+    margin-top: 20px;  /* Memberikan jarak antara tombol dengan konten sebelumnya */
+    margin-bottom: 30px;  /* Memberikan jarak bawah agar tidak terlalu rapat */
+}
+
+.button {
+    background-color: #388e3c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;  /* Memberikan jarak antara tombol dengan atas */
+}
+
+.button:hover {
+    background-color: #81c784; /* Hover effect on button */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Interactive Mode */
+.chaotic {
+    background-color: #c8e6c9; /* Light green for chaotic mode */
+}
+
+.neat {
+    background-color: #388e3c; /* Deep green for neat mode */
+}
+
+/* Responsive Layouts for the Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.image-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-card h3 {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #388e3c;
+    background-color: #f1f8e9;
+    margin-top: -1px;
+}
+
+/* Buttons for navigation */
+button {
+    background-color: #388e3c;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #81c784;
+}
